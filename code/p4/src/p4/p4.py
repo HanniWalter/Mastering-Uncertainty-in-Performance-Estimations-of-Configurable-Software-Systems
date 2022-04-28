@@ -1252,7 +1252,7 @@ class DistBasedRepo(systems.ConfigSysProxy):
         self.measurements_folder = self.get_measurements_folder()
 
         super().__init__(self.measurements_folder, attribute)
-        self.sample_sets = self.parse_sample_sets()
+        #self.sample_sets = self.parse_sample_sets()
 
     def get_train_eval_split(self, t):
         x_train = list(self.sample_sets[t].keys())
